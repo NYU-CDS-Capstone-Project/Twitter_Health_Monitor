@@ -41,3 +41,4 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 
 
 
+## Memo
