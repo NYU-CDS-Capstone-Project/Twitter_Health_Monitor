@@ -1,6 +1,6 @@
 #  TwitterHealth Monitor
-<h3>This is the capstone project repository instructed by NYU Langone. In this project, our main goal is to 
-Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY from real-time Twitter stream, and understand their temporal and spatial variation in the US. </h3>
+This is the capstone project repository instructed by NYU Langone. In this project, our main goal is to 
+Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY from real-time Twitter stream, and understand their temporal and spatial variation in the US.
 
 ## Repo Description
 /notebooks/ : the directory for code demo
@@ -23,4 +23,21 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 
 
 /figures/: some visulization results related to the progress.
+
+## Project Status
+:white_check_mark: Completed
+- Data Preprocessing: 
+  - convert the raw tweets data from json to csv and extract important features including the length of tweet, emojis, hashtags etc.
+  - Generating the __food list__ from [USDA](https://ndb.nal.usda.gov/ndb/doc/index) and __physical activity list__
+  - Label tweets with topics by key-word search
+- Baseline Modeling:
+  - Topic modeling 
+  - Random Forest
+  
+  
+:white_large_square: In Progress
+- Model Hyper-parameter Tuning
+
+
+
 
