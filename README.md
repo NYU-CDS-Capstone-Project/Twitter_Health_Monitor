@@ -1,7 +1,8 @@
-#  TwitterHealth
-<h3>Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY from real-time Twitter stream, and understand their temporal and spatial variation in the US. </h3>
+#  TwitterHealth Monitor
+<h3>This is the capstone project repository instructed by NYU Langone. In this project, our main goal is to 
+Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY from real-time Twitter stream, and understand their temporal and spatial variation in the US. </h3>
 
-
+## Repo Description
 /notebooks/ : the directory for code demo
 1. Raw_Data_Process.ipynb: shows how the data is processed from json fomrat to csv format
 2. statics_analysis.ipynb: shows the statistic analysis in terms of the number and length of tweet, language, emojis, hashtags for different states.
@@ -19,3 +20,7 @@
 4. token_by_whole_file.py: read entire csv file (require a lot of memeory) and then do tokenization, stemming, and lemmatization
 5. token_row_by_row.py: read a csv file row by row, for each row do tokenization, stemming, and lemmatization (require less memeory)
 6.key_word_process.py: read a csv file containing tweets and find whether the tweet mentions food or activity key words
+
+
+/figures/: some visulization results related to the progress.
+
