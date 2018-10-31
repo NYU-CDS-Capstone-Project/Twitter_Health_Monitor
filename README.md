@@ -29,7 +29,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 
 /figures/: some visulization results related to the progress.
 
-## Project Status
+## Project Status Memo
 :white_check_mark: Completed
 - Data Preprocessing: 
   - convert the raw tweets data from json to csv and extract important features including the length of tweet, emojis, hashtags etc.
@@ -44,7 +44,3 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 - Random Forest Hyper-parameter Tuning
 - Monte Carlo Simulation to discover temporal and spatial variation of people's attitude towards health
 
-
-
-
-## Memo
