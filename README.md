@@ -1,6 +1,6 @@
 #  TwitterHealth Monitor
 This is the capstone project repository instructed by NYU Langone. In this project, our main goal is to 
-Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY from real-time Twitter stream, and understand their temporal and spatial variation in the US.
+Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY from real-time Twitter stream, and understand their temporal and spatial variation in the US. 
 
 ## Project Status Memo
 :white_check_mark: Completed
@@ -48,4 +48,5 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 
 /figures/: some visulization results related to the progress.
 
-
+- __Team Name： Burger King__
+- __Team Members: Qintai Liu, Zhiming Guo, Xiaoxue Ma, Jin Han__
