@@ -2,6 +2,21 @@
 This is the capstone project repository instructed by NYU Langone. In this project, our main goal is to 
 Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY from real-time Twitter stream, and understand their temporal and spatial variation in the US.
 
+## Project Status Memo
+:white_check_mark: Completed
+- Data Preprocessing: 
+  - Convert the raw tweets data from json to csv and extract important features including the length of tweet, emojis, hashtags etc.
+  - Generating the __food list__ from [USDA](https://ndb.nal.usda.gov/ndb/doc/index) and __physical activity list__ from [harvard.edu](https://www.health.harvard.edu/diet-and-weight-loss/calories-burned-in-30-minutes-of-leisure-and-routine-activities)
+  - Label tweets with food/activity by key-word search
+- Baseline Modeling:
+  - Topic modeling: Tried NMF and LDA model. Tuned different combination of hyperparameters of LDA.
+  - Random Forest: Used LDA transformation to extract each tweet's topic probability distribution as features. Then constructed the machine learning classifiers.
+  
+:white_large_square: In Progress
+- Keep tyring different hyper-parameters to extract the higher-quality features and feed into classifiers.
+- Random Forest Hyper-parameter Tuning to have better classification to identify food tweets and activity tweets.
+- Monte Carlo Simulation to discover temporal and spatial variation of people's attitude towards health
+
 ## Repo Description
 /notebooks/ : the directory for code demo
 1. Activity_Classifier_Random_Forest.ipynb: uses random forest to predict whether a tweet contains activity or not
@@ -29,18 +44,4 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 
 /figures/: some visulization results related to the progress.
 
-## Project Status Memo
-:white_check_mark: Completed
-- Data Preprocessing: 
-  - Convert the raw tweets data from json to csv and extract important features including the length of tweet, emojis, hashtags etc.
-  - Generating the __food list__ from [USDA](https://ndb.nal.usda.gov/ndb/doc/index) and __physical activity list__ from [harvard.edu](https://www.health.harvard.edu/diet-and-weight-loss/calories-burned-in-30-minutes-of-leisure-and-routine-activities)
-  - Label tweets with food/activity by key-word search
-- Baseline Modeling:
-  - Topic modeling: Tried NMF and LDA model. Tuned different combination of hyperparameters of LDA.
-  - Random Forest: Used LDA transformation to extract each tweet's topic probability distribution as features. Then constructed the machine learning classifiers.
-  
-:white_large_square: In Progress
-- Keep tyring different hyper-parameters to extract the higher-quality features and feed into classifiers.
-- Random Forest Hyper-parameter Tuning to have better classification to identify food tweets and activity tweets.
-- Monte Carlo Simulation to discover temporal and spatial variation of people's attitude towards health
 
