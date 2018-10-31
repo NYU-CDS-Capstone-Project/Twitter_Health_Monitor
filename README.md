@@ -12,6 +12,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
   - the most-used languages on Twitter inside U.S.
   - the average length of each tweet for each state
   - frequency analysis on hashtag, emoji
+  - from the result of key-word search, analyze the percentage of tweet mentioning food or activity for each state.
 - Baseline Modeling:
   - Topic modeling: Tried NMF and LDA model. Tuned different combination of hyperparameters of LDA.
   - Random Forest: Used LDA transformation to extract each tweet's topic probability distribution as features. Then constructed the machine learning classifiers.
