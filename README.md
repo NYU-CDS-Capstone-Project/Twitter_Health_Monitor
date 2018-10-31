@@ -6,6 +6,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 :white_check_mark: Completed
 - Data Preprocessing: 
   - Convert the raw tweets data from json to csv and extract important features including the length of tweet, emojis, hashtags etc.
+  - Statistic analysis on the tweets, like most-used languages on Twitter posed inside U.S., the average length of each tweet for each state, frequency analysis on hashtag, emoji.
   - Generating the __food list__ from [USDA](https://ndb.nal.usda.gov/ndb/doc/index) and __physical activity list__ from [harvard.edu](https://www.health.harvard.edu/diet-and-weight-loss/calories-burned-in-30-minutes-of-leisure-and-routine-activities)
   - Label tweets with food/activity by key-word search
 - Baseline Modeling:
