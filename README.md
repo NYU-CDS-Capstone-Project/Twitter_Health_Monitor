@@ -20,8 +20,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 :white_large_square: In Progress
 - Keep trying different hyper-parameters to extract the higher-quality features and feed into classifiers.
 - Random Forest Hyper-parameter Tuning to have better classification to identify food tweets and activity tweets.
-- Monte Carlo Simulation to discover temporal and spatial variation of people's attitude towards health
-
+- Subsampling to generate the confidence interval of the percentage of tweet mentioning food or activity for each state.
 ## Repo Description
 /notebooks/ : the directory for code demo
 1. Activity_Classifier_Random_Forest.ipynb: uses random forest to predict whether a tweet contains activity or not
