@@ -37,8 +37,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
   - Label tweets with food/activity by key-word search
 - Baseline Modeling:
   - Topic modeling: Tried NMF and LDA model. Tune different combination of hyperparameters of LDA.
-  - Random Forest: Feed in LDA's output, i.e. probabilities of topics to get a food & activity classifier.
-  
+  - Random Forest: Used LDA's transformation to extract each tweet's topic probability distribution as features. Then constructed the machine learning classifiers.
   
 :white_large_square: In Progress
 - Random Forest Hyper-parameter Tuning
