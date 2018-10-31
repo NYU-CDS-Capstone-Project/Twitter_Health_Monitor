@@ -13,7 +13,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
   - Random Forest: Used LDA transformation to extract each tweet's topic probability distribution as features. Then constructed the machine learning classifiers.
   
 :white_large_square: In Progress
-- Keep tyring different hyper-parameters to extract the higher-quality features and feed into classifiers.
+- Keep trying different hyper-parameters to extract the higher-quality features and feed into classifiers.
 - Random Forest Hyper-parameter Tuning to have better classification to identify food tweets and activity tweets.
 - Monte Carlo Simulation to discover temporal and spatial variation of people's attitude towards health
 
