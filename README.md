@@ -35,6 +35,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 10. key_word_match.ipynb: a demo for key word serach(Aho–Corasick algorithm) and some analysis for the result
 11. statics_analysis.ipynb: shows the statistic analysis in terms of the number and length of tweet, language, emojis, hashtags for different states.
 12. tokenization + LDA.ipynb: tokenizes the text tata and runs LDA model at different scenario
+13. Run_Statistic.ipynb: Applied the Kolmogorov-Smirnov test to each LDA model and visulization.
 
 /pyhton script/: the code run on HPC
 1. Run_LDA.py: running and tuning LDA
@@ -45,7 +46,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 6. token_by_whole_file.py: read entire csv file (require a lot of memeory) and then do tokenization, stemming, and lemmatization
 7. token_row_by_row.py: read a csv file row by row, for each row do tokenization, stemming, and lemmatization (require less memeory)
 8.key_word_process.py: read a csv file containing tweets and find whether the tweet mentions food or activity key words
-
+9. ks_test.py: Kolmogorov-Smirnov test and return empirical p-values for food and activity seperately for each LDA model.
 /figures/: some visulization results related to the progress.
 
 - __Team Name： Burger King__
