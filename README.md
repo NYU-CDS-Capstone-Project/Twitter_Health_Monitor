@@ -19,6 +19,7 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 - Optimization:
   - Tried different hyper-parameters for LDA to extract the higher-quality features and feed into classifiers.
   - Tuned Random Forest Hyper-parameter to have better classification to identify food tweets and activity tweets.
+- Results:
   - Subsampling to generate the confidence interval of the percentage of tweet mentioning food or activity for each state.
   - Used embedding distances and false positives to evaluate models' performance
   - Generated graph to demonstrated the seasonal and state-wise difference of food/activity related tweets.
