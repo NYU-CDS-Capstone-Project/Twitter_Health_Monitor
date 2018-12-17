@@ -16,26 +16,35 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 - Baseline Modeling:
   - Topic modeling: Tried NMF and LDA model. Tuned different combination of hyperparameters of LDA.
   - Random Forest: Used LDA transformation to extract each tweet's topic probability distribution as features. Then constructed the machine learning classifiers.
+- Optimization:
+  - Tried different hyper-parameters for LDA to extract the higher-quality features and feed into classifiers.
+  - Tuned Random Forest Hyper-parameter to have better classification to identify food tweets and activity tweets.
+  - Subsampling to generate the confidence interval of the percentage of tweet mentioning food or activity for each state.
+  - Used embedding distances and false positives to evaluate models' performance
+  - Generated graph to demonstrated the seasonal and state-wise difference of food/activity related tweets.
   
-:white_large_square: In Progress
-- Keep trying different hyper-parameters to extract the higher-quality features and feed into classifiers.
-- Random Forest Hyper-parameter Tuning to have better classification to identify food tweets and activity tweets.
-- Subsampling to generate the confidence interval of the percentage of tweet mentioning food or activity for each state.
 ## Repo Description
 /notebooks/ : the directory for code demo
-1. Activity_Classifier_Random_Forest.ipynb: uses random forest to predict whether a tweet contains activity or not
+1. Activity_Classifier_Random_Forest_newest.ipynb: uses random forest to predict whether a tweet contains activity or not
 2. Activity_List_General.ipynb: uses website scrapping to obtain a list of activity
 3. Activity_List_Specific.ipynb: a more specific list of activity
 4. Food_Nutrient_Report.ipynb: includes how to use USDA API to access food nutrient database and define food health scale indicator
 5. NMF.ipynb: nmf model based on small sample
 6. NMF_Model_2015Data.ipynb: runs NMF model with 5 million __tokenized tweets__ from 2015 to see its performance
 7.RF_Baseline_for_Food.ipynb: uses random forest to predict whether a tweet contains food or not
-8. Raw_Data_Process.ipynb: shows how the data is processed from json fomrat to csv format
+8. Raw_Data_Process_new_version.ipynb: shows how the data is processed from json fomrat to csv format
 9. USDA_foodlist_Basic.ipynb: some data visualization on food nutrient by different category level
 10. key_word_match.ipynb: a demo for key word serach(Aho–Corasick algorithm) and some analysis for the result
 11. statics_analysis.ipynb: shows the statistic analysis in terms of the number and length of tweet, language, emojis, hashtags for different states.
 12. tokenization + LDA.ipynb: tokenizes the text tata and runs LDA model at different scenario
 13. Run_Statistic.ipynb: Applied the Kolmogorov-Smirnov test to each LDA model and visulization.
+14. usa_heatmap.ipynb: generate usa heatmap to show the seasonal and state-wise difference.
+15. day_of_week_change.ipynb: generate plots to show the day-of-week change of the percentage of tweet mentioning food/activity for each state.
+16. resample_confidence_interval.ipynb: subsampling to generate teh confidence interval of the percentage of tweet mentioning food/activity for each state.
+17. glove_distance_calc.ipynb: calculate word embedding distance between tweets and key-word list using Glove.
+18. Random_Forest_Embedding_Distance.ipynb: evaluate rf's performance using embedding distances.
+19. key_word_search vs random_forest.ipynb: compare the results of key-word search and random forest model.
+
 
 /pyhton script/: the code run on HPC
 1. Run_LDA.py: running and tuning LDA
@@ -47,6 +56,8 @@ Use NLP approaches to extract features relating to DIET and PHYSICAL ACTIVITY fr
 7. token_row_by_row.py: read a csv file row by row, for each row do tokenization, stemming, and lemmatization (require less memeory)
 8.key_word_process.py: read a csv file containing tweets and find whether the tweet mentions food or activity key words
 9. ks_test.py: Kolmogorov-Smirnov test and return empirical p-values for food and activity seperately for each LDA model.
+
+
 /figures/: some visulization results related to the progress.
 
 - __Team Name： Burger King__
